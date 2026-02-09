@@ -457,7 +457,8 @@ experiencia de compra. </p> -->
                 <div class="row">
                     <div class="col-xl-6 offset-xl-3 col-lg-6 col-md-12 col-md-6">
                         <div class="form">
-                            <form netlify method="POST" action="/gracias">
+                            <form method="POST" action="/gracias" data-netlify="true" name="contacto">
+                                <input type="hidden" name="form-name" value="contacto">
                                 <div class="c-input-group">
                                     <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required>
                                     <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" required>
