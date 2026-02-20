@@ -53,7 +53,8 @@
     })(window,document,'script','dataLayer','GTM-K5VSRTLJ');</script>
     <!-- End Google Tag Manager -->
 <style>
-    @media  screen and (max-width: 1390px)  {
+    /* Ajustes de slider en pantallas medianas */
+    @media  screen and (min-width: 992px) and (max-width: 1390px)  {
         .righ-images{
             transform: translateX(150px);
         }
@@ -64,6 +65,43 @@
   height: 1030px;
 }
     }
+
+    /* Correcciones de slider para mobile */
+    @media screen and (max-width: 991px) {
+      .slider-item {
+        width: 100%;
+        background: #ffab02;
+        height: auto !important;
+        min-height: 70vh;
+        margin-top: 0 !important;
+        padding-bottom: 60px;
+      }
+      .righ-images{
+        display: none;
+      }
+      .slider__content{
+        padding-top: 80px !important;
+        text-align: center;
+      }
+      .text_3{
+        font-size: 96px !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        bottom: 0 !important;
+      }
+      .slider__content h2{
+        font-size: 36px !important;
+      }
+      .slider__content h3{
+        font-size: 18px !important;
+        letter-spacing: 6px !important;
+      }
+    }
+
+
+
+
+    
 
 
 
@@ -81,9 +119,9 @@
         line-height:80px;
         text-align:center;
         z-index:999999999999999999999999999999;
-        transition: transform 0.3s;
+        transition: transform 0.3s;}
         
- }
+ 
 
  .btn-whatsapp :hover {
     transform: scale(1.5);
