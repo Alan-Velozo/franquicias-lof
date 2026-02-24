@@ -28,6 +28,33 @@ body {
   transform:rotateZ(180deg);
 }
 
+/* slider3 */
+.slider3 {
+  height: 60px;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slider3::before,
+.slider3::after{
+  position:absolute;
+  background-image:linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  content:'';
+  height:100%;width:25%;
+  z-index:2;pointer-events:none;
+}
+.slider3::before{
+  left:0;
+  top:0;
+}
+.slider3::after{
+  right:0;
+  top:0;
+  transform:rotateZ(180deg);
+}
+
 /*  IMPORTANT CODE BELOW */
 
 .slide-track {
@@ -38,14 +65,29 @@ body {
 }
 
 .slide-track2 {
-  width: calc(350px * 15);
+  width: calc(200 * 52);
   display: flex;
-  animation: scroll2 15s linear infinite;
-  justify-content: space-between;
+  animation: scroll2 50s linear infinite;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.slide-track3 {
+  width: calc(250px * 20);
+  display: flex;
+  animation: scroll3 30s linear infinite;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+/* medidas específicas de items para slider3 */
+.slider3 .slide{
+  width: 250px;
+  padding-left: 50px;
 }
 
 .slide {
-  width: 250px;
+  width: 200px;
   height: 100px;
 padding-left: 50px;
   display: grid;
@@ -71,7 +113,16 @@ padding-left: 50px;
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(calc(-150px * 5));
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll3 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
@@ -81,11 +132,19 @@ padding-left: 50px;
   }
 
   .slide-track2 {
-    width: calc(80px * 15);
+    width: calc(80px * 52);
+  }
+  .slide-track3 {
+    width: calc(80px * 20);
   }
 
   .slide {
     width: 80px;
+    padding-left: 0;
+  }
+  .slider3 .slide{
+    width: 80px;
+    padding-left: 0;
   }
 
   @keyframes scroll {
@@ -102,7 +161,15 @@ padding-left: 50px;
       transform: translateX(0px);
     }
     100% {
-      transform: translateX(calc(-80px * 5));
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes scroll3 {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-50%);
     }
   }
 }
