@@ -173,3 +173,13 @@ padding-left: 50px;
     }
   }
 }
+
+@media screen and (max-width: 1400px) {
+  #capacitacion{
+    font-size: 20px;
+  }
+
+  #productos, #convenios, #partners, #acciones{
+    font-size: 25px;
+  }
+}
