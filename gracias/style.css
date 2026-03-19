@@ -98,3 +98,18 @@ body {
     box-shadow: inset 0px 0px 0px 75px #ff4444;
   }
 }
+
+@media (max-width: 767px) {
+  .contact__inner_2 h3 {
+    font-size: 24px !important;
+  }
+  .contact__inner_2 p {
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+    padding: 0 15px;
+  }
+  .contact__inner_2 img {
+    margin-top: 20% !important;
+    width: 150px !important;
+  }
+}
