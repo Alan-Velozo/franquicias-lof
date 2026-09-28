@@ -183,6 +183,54 @@
     display: none;
   }
 }
+
+/* ============ Descargos de responsabilidad (cumplimiento publicitario) ============ */
+.lof-disc {
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 12px 0 0 0;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border-left: 4px solid #ffffff;
+  background: rgba(0, 0, 0, 0.45);
+  color: #ffffff;
+}
+.lof-disc strong { font-weight: 700; }
+.lof-disc a { color: #ffffff; text-decoration: underline; }
+
+.lof-disc--clear {
+  border-left-color: #ee0000;
+  background: #f4f4f4;
+  color: #3c3c3c;
+}
+.lof-disc--clear a { color: #b00000; }
+
+.lof-disc--tight {
+  font-size: 11px;
+  padding: 8px 10px;
+  margin-top: 10px;
+}
+
+.lof-disc-title {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  margin-bottom: 4px;
+  opacity: 0.95;
+}
+
+/* Marker de asterisco junto a las cifras */
+.lof-ast { font-size: 0.7em; vertical-align: super; font-weight: 700; }
+
+@media (max-width: 991px) {
+  .lof-disc { font-size: 11px; }
+}
  </style>
 
 </head>
@@ -298,8 +346,13 @@
                                     <div>
                                         <img src="./img/04_que_nos_hace_especiales/calendar-days-solid.png" alt="sdsd" style="zoom: 200%;" class=" wow fadeInLeft mt-4 mb-3" width="50px" data-wow-delay=".3s">
 
-                                        <h3 style="margin-top: -20px; color: beige; font-size: 20PT; text-transform: uppercase;" class=" wow fadeInLeft mt-2" data-wow-duration="3s" data-wow-delay=".3s">Recupero en <br/>18 a 24 meses</h3>
+                                        <h3 style="margin-top: -20px; color: beige; font-size: 17PT; text-transform: uppercase; white-space: normal;" class=" wow fadeInLeft mt-2" data-wow-duration="3s" data-wow-delay=".3s">Recupero estimado:<br/>18 a 24 meses<span class="lof-ast">*</span></h3>
                                     </div>
+                                </div>
+
+                                <div class="lof-disc lof-disc--tight wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                                    <span class="lof-disc-title">Información importante</span>
+                                    <strong>* Los plazos de recupero de la inversión son estimaciones orientativas y no constituyen una promesa, garantía ni aseguramiento de resultados.</strong> El tiempo real de recupero varía de una persona a otra según la zona, el monto invertido, el modelo de gestión, la composición del equipo y las condiciones del mercado. <strong>El rendimiento pasado no es típico ni indicativo de ganancias futuras.</strong> Ningún franquiciado está obligado a alcanzar los plazos aquí descriptos.
                                 </div>
                                 
                                 <a class="button-style-3 wow fadeInLeft mt-4" data-wow-duration="2.5s" data-wow-delay=".1" href="#contact" style="font-size: 24pt;">QUIERO SER PARTE</a>
@@ -422,8 +475,8 @@
                                 <img src="./img/04_que_nos_hace_especiales/circle-dollar-to-slot-solid.png" alt="">
                             </div>
                             <div class="service__content">
-                                <h2 class="mb-25">$360.000 USD</h4>
-                                <p>de facturación promedio anual según zona y local
+                                <h2 class="mb-25">$360.000 USD<span class="lof-ast">*</span></h4>
+                                <p>de facturación promedio anual según zona y local<span class="lof-ast">*</span>
                                 </p>
                             </div>
                         </div>
@@ -441,6 +494,12 @@
                                 </p>
                             </div>
                         </div>
+                </div>
+                <div class="col-12">
+                    <div class="lof-disc lof-disc--clear">
+                        <span class="lof-disc-title">* Metodología y alcance de la estimación</span>
+                        Cifra expresada en dólares, estimada a partir de los reportes de facturación promedio de franquiciados LOF en operación, ponderada según la zona y las características del local (superficie, ubicación, flujo de tránsito y mix de productos). <strong>No representa una garantía de ingresos ni una proyección de resultados.</strong> La facturación real de cada local varía según ubicación, monto invertido, precios, demanda, competencia, cobertura de obras sociales y la gestión del franquiciado, por lo que puede ser superior o inferior. <strong>El rendimiento pasado no es típico ni indicativo de ganancias futuras.</strong>
+                    </div>
                 </div>
             </div>
             </div></div></div>
@@ -717,6 +776,12 @@ experiencia de compra. </p> -->
                     </div>
                 </div>
             </div>
+            <div class="col-12">
+                <div class="lof-disc">
+                    <span class="lof-disc-title">Sobre los testimonios</span>
+                    Las opiniones expresadas corresponden a las personas y a los locales citados y reflejan únicamente su experiencia personal. <strong>No constituyen una promesa, garantía ni aseguramiento de resultados económicos.</strong> Cada franquiciado opera en un contexto distinto (ubicación, inversión, productos, mercado y gestión), por lo que sus resultados <strong>pueden variar de una persona a otra</strong> y no son representativos ni predictivos de lo que ocurrirá en otro local. <strong>El rendimiento pasado no es típico ni indicativo de ganancias futuras.</strong>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -988,6 +1053,12 @@ experiencia de compra. </p> -->
                         </ul>
                        
                     </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="lof-disc">
+                    <span class="lof-disc-title">Aviso legal y descargo de responsabilidad</span>
+                    La información publicada en este sitio tiene carácter meramente informativo y orientativo. <strong>No constituye una oferta, una promesa, una garantía ni un aseguramiento de resultados, ingresos, utilidades ni retorno de la inversión.</strong> Las cifras, plazos y estimaciones publicadas (incluidos los plazos de recupero de la inversión y la facturación promedio) se presentan como referencias orientativas y pueden variar de una persona a otra según la zona, la inversión realizada, la gestión, el equipo, la oferta comercial y las condiciones del mercado. <strong>El rendimiento pasado no es típico ni indicativo de ganancias futuras.</strong> Cada persona decide libre y voluntariamente asumir el riesgo de su inversión; el inicio de una franquicia no garantiza la recuperación del capital invertido. Para información detallada sobre costos, riesgos y condiciones contractuales, contactanos.
                 </div>
             </div>
             <div class="footer__bottom pb-10 mt-60">
